@@ -8,13 +8,17 @@
 		<script type="module" src="index.js"></script>
     </head>
     <body>
-		Input expression: <br><br>
-		( <input type="text" name="c" id="c">
-			x + 
-		<input type="text" name="k" id="k"> ) <sup><input type="text" name="n" id="n"></sup>
-		<br><br>
-		<button id="expand-btn">Expand</button>
-
-		<p id="result-el"></p>
+		<div id="parent">
+			<div>
+				Input expression: <br><br>
+				( <input type="text" name="c" id="c" required>
+					x +
+				<input type="text" name="k" id="k" required> ) <sup><input type="text" name="n" id="n" required></sup>
+				<br><br>
+				<button id="expand-btn">Expand</button>
+				<p id="result-el"></p>
+			</div>
+			<footer>©2023 Techy Enochy</footer>
+		</div>
 	</body>
 </html>

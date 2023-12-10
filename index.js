@@ -6,7 +6,12 @@ expandBtn.addEventListener("click", function(){
 	let $k = parseInt(document.getElementById("k").value)
 	let $n = parseInt(document.getElementById("n").value)
 
-	resultEl.innerHTML = expandBinomial($c, $k, $n)
+	if ( ($c && $k && $n) ) {
+		resultEl.innerHTML = expandBinomial($c, $k, $n)
+	} else {
+		alert("Please input the coefficient, constant and exponent.")
+	}
+	
 })
 
 function factorial(num) {
